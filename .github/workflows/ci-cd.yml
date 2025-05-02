@@ -18,4 +18,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Simular despliegue
-        run: echo "Desplegando app a producción (simulado)"
+        run: |
+          VERSION=$(date +"%Y-%m-%d %H:%M:%S")
+          echo "// Despliegue: $VERSION" > production/index.js
+          cat src/index.js >> production/index.js
+          echo "✅ App desplegada con marca de tiempo en entorno de producción"
+          cat production/index.js

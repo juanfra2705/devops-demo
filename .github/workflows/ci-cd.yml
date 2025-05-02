@@ -23,6 +23,4 @@ jobs:
           cp src/index.js production/
           VERSION=$(date +"%Y-%m-%d %H:%M:%S")
           echo "// Despliegue: $VERSION" > production/index.js
-          cat src/index.js >> production/index.js
-          echo "✅ App desplegada con marca de tiempo en entorno de producción"
-          cat production/index.js
+          

@@ -19,7 +19,7 @@ jobs:
     steps:
       - name: Simular despliegue
         run: |
-          cp src/index.js production/
+          cp src/index.js src/production/
           VERSION=$(date +"%Y-%m-%d %H:%M:%S")
           echo "// Despliegue: $VERSION" > production/index.js
           cat src/index.js >> production/index.js

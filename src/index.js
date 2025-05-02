@@ -1,1 +1,1 @@
-<h1>Versión 2 desplegada</h1>
+<h1>Versión para publicar en develop</h1>

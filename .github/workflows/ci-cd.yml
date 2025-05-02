@@ -17,8 +17,10 @@ jobs:
     needs: build-and-test
     runs-on: ubuntu-latest
     steps:
-      - name: Simular despliegue
-        run: npm install
+      - name: Clonar repositorio
+        uses: actions/checkout@v3
+
+      - name: Simular despliegue con marca de versión
         run: |
           mkdir -p production
           cp src/index.js production/

@@ -21,6 +21,6 @@ jobs:
         run: |
           mkdir -p production
           cp src/index.js production/
-          VERSION=$(date +"%Y-%m-%d %H:%M:%S")
-          echo "// Despliegue: $VERSION" > production/index.js
+          echo "✅ App desplegada en entorno de producción:"
+          ls -l production
           

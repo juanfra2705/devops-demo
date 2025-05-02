@@ -1,0 +1,8 @@
+{
+  "name": "ci-cd-demo",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Running tests...\" && exit 0"
+  }
+}
